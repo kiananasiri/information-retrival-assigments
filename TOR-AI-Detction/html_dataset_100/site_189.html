@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-image: url('mrrobot.jpg'); /* Set background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Blue Filter */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 255, 0.3); /* Light blue filter */
+            z-index: -1;
+        }
+
+        /* Container for the forms */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            width: 350px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .input-field:focus {
+            box-shadow: 0 0 8px #4caf50;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background: linear-gradient(45deg, #4caf50, #3c8d40);
+            border: none;
+            color: white;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, #3c8d40, #4caf50);
+        }
+
+        .toggle-button {
+            background: none;
+            border: none;
+            color: #4caf50;
+            margin-top: 15px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .toggle-button:hover {
+            color: #81c784;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* M4nupil5 neon effect */
+        .neon-text {
+            font-size: 30px;
+            color: rgba(15, 15, 15, 0.863);
+            font-weight: bold;
+            text-align: center;
+            animation: neonGlow 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes neonGlow {
+            0% {
+                text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red, 0 0 20px red, 0 0 25px red;
+            }
+            100% {
+                text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff0000;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Blue Filter -->
+    <div class="overlay"></div>
+
+    <!-- Form Container -->
+    <div class="container">
+        <!-- M4nupil5 Neon Text -->
+        <div class="neon-text">M4nupil5</div>
+        <h2 id="form-title">Login</h2>
+        <!-- Login Form -->
+        <form id="login-form" action="login.php" method="POST">
+            <input type="text" name="username" class="input-field" placeholder="Username" required>
+            <input type="password" name="password" class="input-field" placeholder="Password" required>
+            <button type="submit" name="login" class="btn">Login</button>
+        </form>
+
+        <!-- Register Form -->
+        <form id="register-form" class="hidden" action="login.php" method="POST">
+            <input type="text" name="new_username" class="input-field" placeholder="New Username" required>
+            <input type="password" name="new_password" class="input-field" placeholder="Set Password" required>
+            <button type="submit" name="register" class="btn">Register</button>
+        </form>
+
+        <!-- Toggle between forms -->
+        <button class="toggle-button" id="toggle-button">Register</button>
+    </div>
+
+    <script>
+        // Switching between login and register forms
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+        const toggleButton = document.getElementById('toggle-button');
+        const formTitle = document.getElementById('form-title');
+
+        toggleButton.addEventListener('click', () => {
+            if (loginForm.classList.contains('hidden')) {
+                loginForm.classList.remove('hidden');
+                registerForm.classList.add('hidden');
+                toggleButton.textContent = 'Register';
+                formTitle.textContent = 'Login';
+            } else {
+                loginForm.classList.add('hidden');
+                registerForm.classList.remove('hidden');
+                toggleButton.textContent = 'Login';
+                formTitle.textContent = 'Register';
+            }
+        });
+    </script>
+
+</body>
+</html>

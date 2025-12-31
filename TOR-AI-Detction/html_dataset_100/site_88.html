@@ -1,0 +1,67 @@
+<title>xDArt</title><style>
+html {
+  min-width: fit-content;
+  min-height: 100%;
+  display: flex;
+  width: -moz-available;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+body {
+  background: linear-gradient(133deg, #99739d, #b9c8e6);
+}
+.card {
+  display: flex;
+  gap: 8px;
+  background-color: #ffffff;
+  border-radius: 32px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  padding: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;==
+}
+h2 {
+  margin: 0;
+}
+form, fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  padding-inline: 12px;
+  border-radius: 24px;
+  height: 32px;
+  transition: border-radius 350ms cubic-bezier(0.42, 1.67, 0.21, 0.9);
+  background-color: #6750a4;
+  color: #eee8f5;
+  border: 0;
+}
+.button:active {
+  border-radius: 8px;
+}
+.error {
+  padding: 8px;
+  background: #fcc;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  color: #3a0000;
+}
+</style><div class="card"><h2>User verification</h2><p>To access this site you must complete two challenges.</p><form method="post"><button class="button" type="submit" name="continue">Start</button></form></div>

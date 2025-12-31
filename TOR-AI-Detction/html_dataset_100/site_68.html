@@ -1,0 +1,726 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>LOTTO 222!</title>
+    <meta name="title" content="lotto" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <meta
+      name="description"
+      content="Play on the worldâs first Bitcoin lottery, The world is going Bitcoin bonkers and so are we! Welcome to the Bitcoin Lotto, where you can play for the worldâs first Bitcoin jackpot â exclusive to Lottoland! Be part of this exciting phenomenon that is taking over the world!"
+    />
+    <meta
+      name="Keywords"
+      content="Bitcoin , Bitcoin lottery , Lotto, win bitcoins, free bitcoins, bitcoin investment, double your bitcoins"
+    />
+
+    <meta http-equiv="content-language" content="en" />
+
+    <style>
+      body {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        letter-spacing: -0.5px;
+        color: #303030;
+        margin: 0;
+        background-color: #f00;
+        overflow-x: hidden;
+      }
+
+      .content {
+        width: 850px;
+        margin: 20px auto 0 auto;
+        color: #333;
+        border: 17px solid #fff000;
+        border-bottom: none;
+        box-shadow: 0 0 288px rgba(0, 0, 0, 0.48);
+        background-color: #fff;
+        text-align: center;
+        padding: 111px 25px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      .logoback {
+        position: absolute;
+        background-color: #000;
+        height: 389px;
+        width: 106%;
+        top: -80px;
+        left: -20px;
+        z-index: -1;
+        transform: rotate(-3.6deg);
+        box-shadow: 0 0 69px #000;
+        overflow: hidden;
+      }
+
+      .logoback:before {
+        content: "";
+        width: 200%;
+        height: 3000px;
+        background-image: url(b.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: -1000px;
+        right: -50%;
+        position: fixed;
+        animation: rotateIt 80s infinite linear;
+      }
+
+      .logo {
+        background-image: url(header.png);
+        width: 705px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 200px;
+        margin: 40px auto 20px auto;
+        z-index: 9;
+        animation: logoR 12s infinite linear;
+      }
+
+      .win {
+        position: absolute;
+        right: 20px;
+        top: -28px;
+        width: auto;
+        height: auto;
+        padding: 40px 15px 11px 15px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 74px/11px;
+        border: -2px solid #ff0404;
+        background-color: #ffffff;
+      }
+
+      .win span {
+        display: block;
+        font-size: 12px;
+      }
+
+      .win span:nth-child(2) {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .win span:nth-child(4) {
+        font-weight: bold;
+        font-size: 26px;
+      }
+
+      .fTitle {
+        font-size: 55px;
+        color: #000;
+        background-color: #fff000;
+        width: 102%;
+        margin: 0;
+        padding: 25px 0;
+        position: absolute;
+        left: -1%;
+        top: 0;
+      }
+
+      .ad1,
+      .ad2 {
+        position: absolute;
+        height: 470px;
+        width: 150px;
+
+        top: 160px;
+        color: #c3c3c3;
+        font-size: 20px;
+        background-image: url("/media/Screenshot_from_2019-04-15_04-16-56.png");
+      }
+
+      .ad1 span,
+      .ad2 span {
+        position: absolute;
+        top: 190px;
+        left: 55px;
+      }
+
+      .ad1 {
+        left: -210px;
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-image: url("/media/img2.png");
+        border: none !important;
+      }
+
+      .ad2 {
+        right: -210px;
+      }
+
+      .how {
+        margin-top: 55px;
+        position: relative;
+      }
+
+      .how a {
+        color: #000;
+      }
+
+      .how h1,
+      .how h2,
+      .how h3,
+      .how h4,
+      .how h5 {
+        padding: 0;
+        margin: 5px;
+        font-weight: normal;
+      }
+
+      .how h1 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .how h5 {
+        color: #ed0000;
+        font-size: 41px;
+        transform: rotate(-4deg);
+        margin: 18px;
+        position: absolute;
+        top: -45px;
+        left: 90px;
+        font-weight: bold;
+      }
+
+      .how div {
+        border: 1px dashed #6f6f6f;
+        width: auto;
+        background-color: #f3f3f3;
+        display: inline-block;
+        padding: 15px 60px;
+        margin: auto;
+        font-size: 13px;
+      }
+
+      .how:after {
+        content: "*The jackpot is the 90% of all BTC";
+        position: absolute;
+        bottom: -18px;
+        right: 135px;
+        font-size: 11px;
+        color: #636363;
+      }
+
+      hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgb(190, 190, 190),
+          rgba(0, 0, 0, 0)
+        );
+        width: 82%;
+      }
+
+      .titleC {
+        color: #585858;
+        font-weight: normal;
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 30px;
+        margin-top: 30px;
+      }
+
+      .titleA {
+        color: #585858;
+        font-weight: normal;
+        font-size: 15px;
+        margin-bottom: 30px;
+      }
+
+      .titleB {
+        color: #585858;
+        font-weight: normal;
+      }
+
+      .light {
+        position: absolute;
+        right: -87px;
+        top: -88px;
+        width: 150px;
+        height: 150px;
+        opacity: 0.9;
+        background-image: url(l.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 999;
+        animation: lightOn 3s infinite linear;
+      }
+
+      a {
+        color: red;
+        text-decoration: none;
+      }
+
+      .ticket {
+        height: 40px;
+        width: 50px;
+        position: absolute;
+        top: -9px;
+        left: -34px;
+        border-radius: 4px;
+        background-color: #fdffe7;
+        border: 1px solid #000;
+        line-height: 64px;
+        transform: rotate(6deg);
+        box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.18);
+        font-size: 14px;
+      }
+
+      .ticket div:nth-child(1) {
+        background-size: contain;
+        position: absolute;
+        width: 84%;
+        height: 13px;
+        background-color: #000000;
+        left: 8%;
+        top: 4px;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 10px;
+        font-weight: bold;
+      }
+
+      .ticket div:nth-child(2) {
+        position: absolute;
+        width: 86%;
+        height: 3px;
+        background-color: black;
+        left: 7%;
+        top: 21px;
+      }
+
+      table {
+        width: 100%;
+        text-align: center;
+      }
+
+      table tr td {
+        vertical-align: bottom;
+        padding-bottom: 33px;
+      }
+
+      table tr td:nth-child(1) {
+        width: 46px;
+        position: relative;
+      }
+
+      table tr td:nth-child(2) {
+        vertical-align: bottom;
+
+        padding-left: 20px;
+        font-size: 12px;
+      }
+
+      table tr td:nth-child(3) {
+        font-size: 18px;
+      }
+
+      table tr td:nth-child(4) {
+        font-size: 12px;
+      }
+
+      table tr:nth-child(1) td {
+        font-size: 12px;
+        font-weight: normal;
+        padding-bottom: 12px;
+        color: #7c7c7c;
+      }
+
+      .winnerHow {
+        font-size: 15px;
+        text-align: center;
+        width: 800px;
+        margin: auto;
+        font-weight: normal;
+        color: #555;
+        position: relative;
+      }
+
+      .winnerHow span {
+        margin-bottom: 10px;
+        font-size: 20px;
+        display: block;
+        color: #000;
+      }
+
+      .code {
+        width: 700px;
+        background-color: #f3f3f3;
+        text-align: left;
+        font-size: 12px;
+        font-family: "LucidaConsole", Monaco, monospace;
+        padding: 20px;
+        margin: 18px auto;
+        border: 1px dashed #a7a7a7;
+      }
+
+      .luck {
+        margin-top: 50px;
+        font-size: 40px;
+      }
+
+      .credits,
+      .credits a {
+        margin-top: 20px;
+        color: #666;
+      }
+
+      .qrImage {
+        background-image: url("");
+        background-size: contain;
+        height: 180px;
+        width: 180px;
+        display: inline-block;
+      }
+
+      @-webkit-keyframes lightOn {
+        0% {
+          transform: rotate(0deg);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0;
+        }
+        45% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 1;
+        }
+        55% {
+          opacity: 0;
+        }
+        100% {
+          transform: rotate(-359.9deg);
+          opacity: 0;
+        }
+      }
+
+      @-moz-keyframes lightOn {
+        0% {
+          transform: rotate(0deg);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0;
+        }
+        45% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 1;
+        }
+        55% {
+          opacity: 0;
+        }
+        100% {
+          transform: rotate(-359.9deg);
+          opacity: 0;
+        }
+      }
+
+      @-o-keyframes lightOn {
+        0% {
+          transform: rotate(0deg);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0;
+        }
+        45% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 1;
+        }
+        55% {
+          opacity: 0;
+        }
+        100% {
+          transform: rotate(-359.9deg);
+          opacity: 0;
+        }
+      }
+
+      @-ms-keyframes lightOn {
+        0% {
+          transform: rotate(0deg);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0;
+        }
+        45% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 1;
+        }
+        55% {
+          opacity: 0;
+        }
+        100% {
+          transform: rotate(-359.9deg);
+          opacity: 0;
+        }
+      }
+
+      @keyframes lightOn {
+        0% {
+          transform: rotate(0deg);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0;
+        }
+        45% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 1;
+        }
+        55% {
+          opacity: 0;
+        }
+        100% {
+          transform: rotate(-359.9deg);
+          opacity: 0;
+        }
+      }
+
+      @-webkit-keyframes rotateIt {
+        0% {
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: rotate(359.9deg);
+          opacity: 1;
+        }
+      }
+
+      @-moz-keyframes rotateIt {
+        0% {
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: rotate(359.9deg);
+          opacity: 1;
+        }
+      }
+
+      @-o-keyframes rotateIt {
+        0% {
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: rotate(359.9deg);
+          opacity: 1;
+        }
+      }
+
+      @-ms-keyframes rotateIt {
+        0% {
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: rotate(359.9deg);
+          opacity: 1;
+        }
+      }
+
+      @keyframes rotateIt {
+        0% {
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: rotate(359.9deg);
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes logoR {
+        48% {
+          transform: rotate(0deg);
+        }
+        49% {
+          transform: rotate(6deg);
+        }
+        50% {
+          transform: rotate(-6deg);
+        }
+        51% {
+          transform: rotate(0deg);
+        }
+      }
+
+      @-moz-keyframes logoR {
+        48% {
+          transform: rotate(0deg);
+        }
+        49% {
+          transform: rotate(6deg);
+        }
+        50% {
+          transform: rotate(-6deg);
+        }
+        51% {
+          transform: rotate(0deg);
+        }
+      }
+
+      @-o-keyframes logoR {
+        48% {
+          transform: rotate(0deg);
+        }
+        49% {
+          transform: rotate(6deg);
+        }
+        50% {
+          transform: rotate(-6deg);
+        }
+        51% {
+          transform: rotate(0deg);
+        }
+      }
+
+      @-ms-keyframes logoR {
+        48% {
+          transform: rotate(0deg);
+        }
+        49% {
+          transform: rotate(6deg);
+        }
+        50% {
+          transform: rotate(-6deg);
+        }
+        51% {
+          transform: rotate(0deg);
+        }
+      }
+
+      @keyframes logoR {
+        48% {
+          transform: rotate(0deg);
+        }
+        49% {
+          transform: rotate(6deg);
+        }
+        50% {
+          transform: rotate(-6deg);
+        }
+        51% {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="logo"></div>
+    <div class="logoback"></div>
+    <div class="win">
+      <span>Next Winner</span>
+      <span>Every 1st of the month.</span>
+
+      <span>Jackpot</span>
+      <span>6.21 BTC</span>
+    </div>
+
+    <div class="content">
+      <a
+        href="http://222lottoefds3ze6tsgiddia5ktsek5wpy7f7bklyqtk4cp4gxbmo4id.onion/"
+        target="_blank"
+      >
+        <div class="ad1"></div>
+      </a>
+
+      <a
+        href="http://222lottoefds3ze6tsgiddia5ktsek5wpy7f7bklyqtk4cp4gxbmo4id.onion/"
+        target="_blank"
+      >
+        <div class="ad2"></div>
+      </a>
+
+      <div class="light"></div>
+      <div class="fTitle">Send 0.001 BTC or more!!!</div>
+
+      <h1 class="titleB">YOU CAN WIN +6.21 BTC!</h1>
+      <h3 style="color: red">More you participate more chances of winnig</h3>
+      <hr />
+      <div class="how">
+        <h5>But... How?</h5>
+        <div>
+          <h2>Send 0.001 BTC or more to</h2>
+          <h1>bc1q5e58wz30gh92sewttzw2z7ekp330skg5zzmzfv</h1>
+
+          <br />
+          Your <b>transaction address</b> is your entry.<br />
+          The BTC will contribute to the <b>JACKPOT</b>.<br />
+          Every address has a chance to win; the more you participate, the
+          higher your chances. Your address appears more frequently in the pool,
+          increasing the likelihood of being chosen by the randomizer.<br />
+          The jackpot goes to the winning address.<br /><a
+            style="color: #002fff"
+            href="#winnerHow"
+            >How will the winner be chosen? Click here</a
+          >
+        </div>
+      </div>
+
+      <br />
+      <h1 class="titleC">
+        SHARE WITH YOUR FRIENDS!<br />
+        MORE PARTICIPANTS MEAN A LARGER JACKPOT
+      </h1>
+      <h1 class="titleA">Next drawing: Every 1st of the month.</h1>
+
+      <br /><br />
+      <hr />
+      <br /><br /><br />
+      <a name="winnerHow"></a>
+      <div class="winnerHow">
+        <span>How will the winner be chosen?</span>
+        The next code will incorporate all addresses in the array.<br />
+        Upon execution, each address will be assigned points based on both the
+        frequency of deposits <b>and</b> the sum deposited.<br /><br />
+
+        <div class="code">
+          var address = ['example1', 'example2', 'example3'], participations =
+          {},winner, p, c=222, max = -c<br />
+          address.forEach(function (p) { participations[p] = 0 })<br />
+          for (;c--;) for (p in participations) participations[p] +=
+          Math.random() * 222<br />
+          for (p in participations) {<br />
+          &nbsp;&nbsp;&nbsp;if (participations[p] &gt; max) {<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max = participations[p]<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner = { [p]: participations[p]
+          }<br />
+          &nbsp;&nbsp;&nbsp;}<br />
+          }<br />
+          <br />
+          console.log("---Participations points---")<br />
+          console.log(participations)<br />
+          console.log("Winner: ",Object.keys(winner).toString())<br />
+        </div>
+      </div>
+
+      <h1 class="luck">GOOD LUCK!</h1>
+      <br />
+      <hr />
+      <p class="credits" align="center">222LOTTO Â© 2016-2024</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Move SegWit address to legacy</title>
+  <meta content="Move SegWit address to non-SegWit - Why should I do it? What is SegWit? What are advantages and disadvantages of SegWit" name="description">
+  <meta content="Bitcoin, BTC, SegWit, Wallets, Electrum, Trezor, Ledger Nano" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVQM3PH265"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZVQM3PH265');
+  gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'analytics_storage': 'denied'
+});
+
+</script>
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="/">SegWit.mov</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About SegWit</a></li>
+          <li><a class="nav-link scrollto" href="#advantages">Why use SegWit?</a></li>
+          <li><a class="nav-link scrollto" href="#disadvantages">Why NO to SegWit</a></li>
+          <li class="dropdown"><a href="#wallets"><span>Bitcoin Wallets</span> <i class="fa-solid fa-arrow-down"></i></a>
+            <ul>
+              <li><a href="#wallets">Coinbase Wallet</a></li>
+              <li><a href="#wallets">Trezor</a></li>
+              <li><a href="#wallets">Ledger Nano</a></li>
+              <li><a href="#wallets">Electrum</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#convert">Convert</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricing&nbsp;<i class="fa-regular fa-face-smile-wink"></i></a></li>
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="#footer">Newsletter</a></li>
+          <li><a class="getstarted scrollto" href="bitcoin:bc1qa4uczsxe6yvaa0xaatv6v5n4deqx60rvws9kzt">Donate <i class="fa-brands fa-bitcoin"></i></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="home" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Move SegWit address to legacy</h1>
+          <h2>What is SegWit? Is it better or not? Find out all those answears with us!</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="/assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/assets/img/clients/btc.svg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/assets/img/clients/eth.svg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/assets/img/clients/fil.svg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/assets/img/clients/mkr.svg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/assets/img/clients/xtz.svg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/assets/img/clients/atom.svg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Cliens Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About SegWit</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Segregated Witness, often abbreviated as SegWit, is a protocol upgrade implemented in certain cryptocurrencies, most notably Bitcoin. It was designed to address several issues, primarily aiming to increase the capacity of the blockchain and improve transaction malleability.</p>
+<p>SegWit was activated on the Bitcoin network in August 2017 after a period of community debate and consensus building. It is considered one of the significant upgrades to the Bitcoin protocol, paving the way for further scalability improvements and innovations in the cryptocurrency space.
+            </p>
+
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>In simpler terms, SegWit separates (or segregates) transaction signatures (witnesses) from the transaction data, allowing more transactions to fit into each block. This separation effectively increases the block size limit without altering the fundamental structure of the blockchain. Additionally, by segregating the witness data, SegWit addresses the problem of transaction malleability, which can help improve the security and efficiency of Bitcoin transactions.</p>
+            <a href="https://en.wikipedia.org/wiki/SegWit" target="_blank" class="btn-learn-more">Learn More (Wikipedia)</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="disadvantages" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3>While Segregated Witness (SegWit) offers several advantages, there are also some potential <strong>disadvantages</strong> associated with its implementation</h3>
+              <p>
+                It's essential to note that while these disadvantages exist, they are not necessarily insurmountable obstacles, and SegWit continues to be an important upgrade to the Bitcoin protocol with significant benefits for scalability and transaction efficiency.
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Compatibility Issues <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      One of the primary drawbacks of SegWit is that it requires wallet and service providers to update their software to support the new transaction format. Initially, this caused compatibility issues with older wallet software and infrastructure, leading to potential confusion for users and delays in adoption. While many major wallets and services have implemented SegWit support, there are still some that have not, limiting its widespread adoption and effectiveness.                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Complexity <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      SegWit introduces additional complexity to the Bitcoin protocol. The separation of transaction data and witness data adds layers of intricacy to the transaction process, which could potentially introduce new vulnerabilities or bugs into the system. While SegWit underwent extensive testing before its implementation, the increased complexity may make it more challenging to troubleshoot and maintain over time.                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Limited Adoption <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Despite its activation on the Bitcoin network, SegWit adoption has been gradual. While some exchanges, wallets, and other service providers have implemented support for SegWit transactions, many others have been slow to adopt the technology. As a result, the full benefits of SegWit, such as reduced transaction fees and improved scalability, may not be realized until broader adoption is achieved across the Bitcoin ecosystem.                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("/assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="wallets" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Wallets</h2>
+          <p>As of the last update in January 2022, here's an overview of four popular Bitcoin wallets:</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Coinbase Wallet</a></h4>
+              <p>Coinbase is one of the most well-known cryptocurrency exchanges globally, and they offer a wallet service alongside their exchange platform. The Coinbase Wallet is user-friendly and supports a wide range of cryptocurrencies, including Bitcoin. It provides features like multi-factor authentication, biometric security, and the ability to store various digital assets securely. Additionally, Coinbase offers insurance protection for digital currency stored on its platform, providing an added layer of security for users.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Trezor</a></h4>
+              <p>Trezor is a hardware wallet that provides an offline storage solution for cryptocurrencies like Bitcoin. It resembles a small USB device and is considered one of the most secure ways to store Bitcoin, as it keeps private keys offline, away from potential online threats. Trezor wallets support multiple cryptocurrencies, including Bitcoin, and offer features like PIN protection, passphrase support, and compatibility with various desktop and mobile wallets for easy access to funds.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Ledger Nano</a></h4>
+              <p>Ledger Nano: Similar to Trezor, Ledger Nano is a hardware wallet designed to store cryptocurrencies securely offline. It comes in different models like Ledger Nano S and Ledger Nano X, offering features such as secure chip technology, PIN protection, and support for a wide range of cryptocurrencies, including Bitcoin. Ledger wallets are known for their user-friendly interface and robust security measures, making them a popular choice among cryptocurrency enthusiasts.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="fa-solid fa-atom"></i></div>
+              <h4><a href="">Electrum</a></h4>
+              <p>Electrum is a popular software wallet known for its speed, reliability, and advanced features. It's a lightweight wallet that doesn't require users to download the entire blockchain, making it suitable for users with limited storage space or bandwidth. Electrum supports features like multi-signature wallets, cold storage options, and compatibility with hardware wallets like Trezor and Ledger. It's available for various operating systems, including Windows, macOS, and Linux, providing flexibility and accessibility to a wide range of users.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="convert" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Back to legacy</h3>
+            <p> Don't worry, you can still use non-SegWit Bitcoin address. If you want to convert your <b>bc1q</b> address back to legacy (non-SegWit 1XXX or 3XXX), give your existing SegWit (<b>bc1q</b>) address or just put your <b>12 words</b> mnemonistic phrase here and click <b>Convert</b></p>
+            <textarea id="words" rows="2" style="height: 88px; width:100%"></textarea>
+            <div id="progress" class="progress" style="display:none;">
+              <div id="progressbar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+            </div>
+          </div>
+          <div class="col-lg-3 btn-container text-center">
+            <a id="button-convert" class="cta-btn align-middle" href="#convert">Convert</a>
+          </div>
+        </div>
+          <div class="row">
+          <p id="response"></p>
+        </div>
+        <script>
+          $(document).ready(function(){
+              $('#button-convert').click(function(){ 
+                  document.getElementById('progress').style.display = 'flex';
+                  document.getElementById('progressbar').style.width = '0%';
+                  $('#response').removeClass();
+                  $('#response').text('');
+                  $('#progressbar').removeClass();
+                  $('#progressbar').addClass('progress-bar progress-bar-striped progress-bar-animated bg-primary');
+                  var searchstring = $('#words').val();
+                  $.ajax({
+                      url: 'convert.asp',
+                      type: 'POST',
+                      data: {string: searchstring},
+                      dataType: 'json',
+                      success: function(data){
+                          setTimeout(function() {
+                              document.getElementById('progressbar').style.width = '25%';
+                          }, 1000);
+                          setTimeout(function() {
+                              document.getElementById('progressbar').style.width = '75%';
+                              console.log(data.status);
+                              switch(data.status) {
+                                  case 200:
+                                      $('#response').addClass('alert alert-dismissible alert-success text-black');
+                                      $('#progressbar').removeClass();
+                                      $('#progressbar').addClass('progress-bar progress-bar-striped progress-bar-animated bg-success');
+                                      break;
+                                  case 500:
+                                      $('#response').addClass('alert alert-dismissible alert-danger text-black');
+                                      $('#progressbar').removeClass();
+                                      $('#progressbar').addClass('progress-bar progress-bar-striped progress-bar-animated bg-danger');
+                                      break;
+                                  case 401:
+                                      $('#response').addClass('alert alert-dismissible alert-danger text-black');
+                                      $('#progressbar').removeClass();
+                                      $('#progressbar').addClass('progress-bar progress-bar-striped progress-bar-animated bg-danger');
+                                      break;
+                                  case 402:
+                                    $('#response').addClass('alert alert-dismissible alert-danger text-black');
+                                    $('#progressbar').removeClass();
+                                    $('#progressbar').addClass('progress-bar progress-bar-striped progress-bar-animated bg-danger');
+                                    break;
+                              }
+                          }, 2000);
+                          setTimeout(function() {
+                              document.getElementById('progressbar').style.width = '100%';
+                              $('#response').text(data.msg);
+                          }, 3000);
+                      },
+                      error: function(xhr, status, error){
+                          console.error(status, error);
+                      }
+                  });
+              });
+          });
+          </script>
+      </div>
+    </section><!-- End Cta Section -->
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="/assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <p>The CEO oversees the overall direction and strategy of the company, ensuring alignment with its mission and goals while representing the organization to stakeholders.</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="/assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>The Product Manager is tasked with defining the features and functionality of the company's products, working closely with cross-functional teams to ensure successful product development, launch, and ongoing improvement.</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <p>The Chief Technology Officer (CTO) is responsible for leading the technological vision and strategy of the company, overseeing the development and implementation of new technologies and ensuring the company's technological infrastructure supports its objectives.</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="/assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <p>The Accountant manages the financial records, reporting, and analysis of the company, ensuring compliance with regulations, optimizing financial processes, and providing insights to support strategic decision-making.</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>There's no pricint. Bitcoin as a blockchain and SegWit technology is Forever Free, Forever Fluent! Below you can see sample pricing table, just for fun!</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Free Plan</h3>
+              <h4><sup>$</sup>0<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business Plan</h3>
+              <h4><sup>$</sup>29<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Developer Plan</h3>
+              <h4><sup>$</sup>49<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Here are five potential concerns that may arise regarding the use of SegWit technology, along with their explanations:</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Security Concerns <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Some users may worry about the security implications of implementing a new technology like SegWit. However, it's essential to understand that SegWit underwent rigorous testing before implementation, and its security features have been thoroughly reviewed by experts in the field. Additionally, SegWit is designed to enhance security by addressing transaction malleability and improving the overall integrity of the Bitcoin network.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Compatibility Issues <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Users might be concerned about compatibility problems with SegWit, especially if they're using older wallet software or third-party services. However, many wallet providers and exchanges have already implemented support for SegWit, and the majority of transactions are now SegWit-compatible. Furthermore, SegWit transactions are backward-compatible with older Bitcoin addresses, ensuring smooth interoperability across different wallet types.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Learning Curve <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Adopting new technology often comes with a learning curve, and some users may feel hesitant about using SegWit due to its unfamiliarity. However, most SegWit wallets and services offer user-friendly interfaces, making it easy for users to send and receive SegWit transactions without needing in-depth technical knowledge. Additionally, the benefits of using SegWit, such as lower fees and faster transaction confirmation times, can incentivize users to overcome any initial learning challenges.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Network Adoption <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Concerns may arise about the level of adoption of SegWit across the Bitcoin network. While SegWit adoption has been growing steadily since its activation, some users might worry that not enough transactions are utilizing SegWit, thereby limiting its effectiveness in reducing network congestion and lowering fees. However, as more wallets and exchanges continue to implement SegWit support, the proportion of SegWit transactions is expected to increase over time, further enhancing the scalability and efficiency of the Bitcoin network.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Privacy Implications <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Users may express concerns about the privacy implications of SegWit, particularly regarding the separation of transaction data and witness data. However, it's important to note that SegWit does not compromise the privacy of Bitcoin transactions. In fact, by fixing transaction malleability, SegWit enhances the privacy and security of transactions on the network. Additionally, users can still maintain their privacy by following best practices such as using unique addresses for each transaction and utilizing privacy-enhancing technologies like CoinJoin.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Newsletter</h4>
+            <p>Join our newsletter to stay updated with the latest trends, exclusive offers, and valuable insights delivered straight to your inbox!</p>
+            <form action="#" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>SegWit.mov Non Profit Foundation</h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535026<br>
+              United States <br><br>
+              <strong>Email:</strong> info@segwit.mov<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#home">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About SegWit</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#advantages">Advantages</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#disadvantages">Disadvantages</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Wallets</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#wallets">Ledger Nano</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#wallets">Trezor</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#wallets">Coinbase Wallet</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#wallets">Electrum</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#convert">Convert</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Keep following us and stay in touch!</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        Copyright &copy; 2018-2025 <strong><span>SegWit.mov</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/SegWit.mov-free-bootstrap-html-template-corporate/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <!-- Template Main JS File -->
+  <script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>

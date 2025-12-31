@@ -1,4 +1,5 @@
 *.env
 query_opimization/data
-*.html
+
+/TOR-AI-Detction/collected_data_v10
 __pycache__/
