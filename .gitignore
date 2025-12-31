@@ -1,2 +1,4 @@
 *.env
 query_opimization/data
+*.html
+__pycache__/
